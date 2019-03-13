@@ -30,11 +30,28 @@ $(document).ready(function() {
                     "1231&q=" + searchTerm + "&page=" + pageNumber + "&api-key=" + APIKey;
 
         $.ajax({
-            url = queryURL,
+            url: queryURL,
             method: 'GET'
         })
         .then(function(response){
             
+            console.log(response);
+            var articles = response.response.docs;
+            console.log(articles);
+            debugger;
+
+            for (var i = 0; i < numArticles; i++){
+                var articleDiv = $("<div>");
+                var title = articles[i].headline.main;
+                var author = articles[i].byline.original;
+                console.log(title+author);
+                articleDiv.append(
+                    $("<p>").text(title)
+                ).append(
+                    $("<p>").text(author)
+                );
+                $("#results-box").append(articleDiv);
+            }
 
         })
 
