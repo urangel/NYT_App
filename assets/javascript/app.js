@@ -8,7 +8,7 @@ $(document).ready(function() {
 
         for (var i = 0; i <= Math.floor((numArticles - 1) / 10); i++) {
 
-            if (i === Math.floor( (numArticles - 1) /10) ){
+            if ((i === Math.floor((numArticles - 1) / 10)) && (numArticles % 10 !== 0)){
                 apiCall(i, numArticles % 10);
             } else {
                 apiCall(i, 10);
@@ -19,14 +19,13 @@ $(document).ready(function() {
     function apiCall(pageNumber, numArticles){
 
         var queryURL = "https://api.nytimes.com/svc/search/v2/articlesearch.json?begin_date=" + startDate + "0101&end_date=" + endDate + 
-                    "1231&q=" + "something&api-key=" + APIKey;
+                    "1231&q=" + searchTerm + "&page=" + pageNumber + "&api-key=" + APIKey;
 
         $.ajax({
             url = queryURL,
             method: 'GET'
         })
         .then(function(response){
-
 
 
         })
