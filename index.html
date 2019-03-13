@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    
+    <title>The New York Times</title>
+
+    <!--style sheet-->
+    <link rel="stylesheet" href="assets/css/style.css">
+
+</head>
+
+<body>
+
+    <header>
+        <h1>New York Times Search</h1>
+    </header>
+    <h1 class="title">Search Parameters</h1>
+    <div class="search-box">
+        <form>
+            <label>Search Term:</label>
+            <input type="text" class="input-box" id = "search-term">
+
+            <label>Number of Records to Retrieve:</label>
+            <input type="text" class="input-box" id = "num-records">
+
+            <label>Start Year (Optional):</label>
+            <input type="text" class="input-box" id = "start-year">
+
+            <label>End Year (Optional):</label>
+            <input type="text" class="input-box" id = "start-year">
+            
+            <button id = "search">Search</button>
+            <button id = "clear-results">Clear Results</button>
+            <!--just in case, this is the form submit button-->
+            <!-- <input id="submit" type="submit" value="Submit"> -->
+        </form>
+        
+        
+    </div>
+
+    <div class="results-box">
+        
+    </div>
+
+
+    <footer>Search the whoooole New York Times database.</footer>
+
+    <!--JQuery-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    
+    <!--Our JavaScript-->
+    <script src = "assets/javascript/logic.js"></script>
+</body>
+</html>
