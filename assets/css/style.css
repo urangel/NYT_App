@@ -4,6 +4,7 @@
 
 body {
     font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
 }
 
 #wrapper {
@@ -21,30 +22,44 @@ body {
     margin-bottom: 30px;
 }
 
-.search-box {
-    border: solid 1px #444;
+#search-container {
+    border: solid 1px #888;
     border-radius: 5px;
-    background: #444;
+    margin-bottom: 20px;
 }
 
 .title {
+    font-weight: bold;
     padding: 10px;
     background: #888;
 }
 
 form {
-    float: left;
     padding: 10px;
 }
 
+label{
+    margin-bottom: 20px;
+}
+
 .input-box {
-    border: solid 1px #444;
+    border: solid 1px #888;
     border-radius: 5px;
     padding: 5px;
     width: 100%;
     margin-bottom: 15px;
+    margin-top: 5px;
 }
 
 footer {
     clear: both;
+    text-align: center;
+    width: 100%;
+}
+
+button {
+    padding: 5px;
+    margin: 5px;
+    background: #ffffff;
+    border: none;
 }
