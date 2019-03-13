@@ -1,0 +1,50 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#wrapper {
+    margin: auto;
+    width: 600px;
+}
+
+#header {
+    font-size: 36px;
+    text-align: center;
+    background-color: #222;
+    color: #eee;
+    padding: 40px;
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+.search-box {
+    border: solid 1px #444;
+    border-radius: 5px;
+    background: #444;
+}
+
+.title {
+    padding: 10px;
+    background: #888;
+}
+
+form {
+    float: left;
+    padding: 10px;
+}
+
+.input-box {
+    border: solid 1px #444;
+    border-radius: 5px;
+    padding: 5px;
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+footer {
+    clear: both;
+}
